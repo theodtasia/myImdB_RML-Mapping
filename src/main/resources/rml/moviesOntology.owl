@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Prefix name="ex" IRI="http://example.com/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class abbreviatedIRI="ex:Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ex:Movie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="List"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="ex:knownForTitles"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="ex:average"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="ex:birthYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="ex:id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="ex:knownForTitles"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="ex:primaryName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="ex:primaryTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="ex:runtimeMinutes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="ex:startYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="ex:tconst"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="ex:titleType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="ex:total"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="ex:knownForTitles"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="List"/>
+        <NamedIndividual abbreviatedIRI="ex:knownForTitles"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="ex:knownForTitles"/>
+        <Class abbreviatedIRI="ex:Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="ex:knownForTitles"/>
+        <Class abbreviatedIRI="ex:Movie"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="ex:average"/>
+        <Class abbreviatedIRI="ex:Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="ex:birthYear"/>
+        <Class abbreviatedIRI="ex:Actor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="ex:id"/>
+        <Class abbreviatedIRI="ex:Actor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="ex:primaryName"/>
+        <Class abbreviatedIRI="ex:Actor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="ex:primaryTitle"/>
+        <Class abbreviatedIRI="ex:Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="ex:runtimeMinutes"/>
+        <Class abbreviatedIRI="ex:Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="ex:startYear"/>
+        <Class abbreviatedIRI="ex:Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="ex:tconst"/>
+        <Class abbreviatedIRI="ex:Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="ex:titleType"/>
+        <Class abbreviatedIRI="ex:Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="ex:total"/>
+        <Class abbreviatedIRI="ex:Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="ex:average"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="ex:birthYear"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="ex:id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="ex:primaryName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="ex:primaryTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="ex:runtimeMinutes"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="ex:startYear"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="ex:tconst"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="ex:titleType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="ex:total"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
